@@ -1,0 +1,63 @@
+h1, .h1 {
+    font-size: 33px;
+    @include mobile {
+        font-size: 46px;
+      }
+      @include mobile-lg {
+        font-size: 50px;
+      }
+      @include desktops {
+        font-size :56px;
+      }
+}
+
+h2, .h2 {
+    font-size: 30px;
+    @include mobile {
+        font-size: 35px;
+    }
+    @include mobile-lg {
+        font-size: 40px;
+    }
+    @include desktops {
+        font-size: 46px;
+
+    }
+}
+ 
+h3, .h3 {
+    font-size: 38px;
+}
+
+h4, .h4 {
+    font-size: 28px;
+}
+
+h5, .h5 {
+    font-size: 24px;
+}
+
+h6, .h6 {
+    font-size: 21px;
+}
+
+
+p {
+    font-size: 18px;
+}
+
+.p1 {
+    font-size: 18px;
+}
+
+.p2 {
+    font-size: 16px;
+}
+
+.p3 {
+    font-size: 14px;
+} 
+
+.span {
+    font-size: 12px;
+}

@@ -1,0 +1,209 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/spacings';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-font;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1f1f1f;
+    background: $body-color;
+}
+.site-wrapper{
+    overflow: hidden;
+}
+
+.slick-slide{
+    &:focus{
+        border:none;
+        outline:none;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+a,
+span {
+    display: inline-block;
+}
+
+a {
+    transition: 0.4s;
+    color: inherit;
+    &:focus {
+        outline: none !important;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    
+    &:visited {
+        text-decoration: none;
+    }
+    
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+span{
+    font-size: 12px;
+}
+
+.btn:focus,
+.btn:active {
+    box-shadow: none;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.form-control{
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+/* Common Classes */
+
+.section-title {
+    text-align: center;
+    h2 {
+      font-weight: 700;
+      letter-spacing: -0.34px;
+      padding-bottom: 10px;
+    }
+    p {
+      font-weight: 400;
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 34px;
+    }
+  }
+/* Spacing */
+
+.section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktops {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+.section-padding-bottom{
+   margin-bottom: 60px;
+   @include tablet {
+      margin-bottom: 120px;
+   }
+}
+
+.section-padding-top {
+    margin-top: 60px;
+    @include tablet {
+        margin-top: 120px;
+    }
+}
+
+/* Background Image */
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shape-holder{
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    img{
+        width: 100%;
+        max-width: initial;
+    }
+}
+
+/* Flex */
+
+.flex-all-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* Typography */
+
+.text--primary{
+color: $primary-color;
+}
+
+.fs-inherit{
+    font-size: inherit;
+}
+
+/* Border */
+
+.section-divider {
+    border: 1px solid #e8e8ea;
+}
+
+/* Animation */
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+
+
+
+
+
+
+
+  
+
