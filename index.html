@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>QuranHub</title>
+  <title id="mytitle">QuranHub</title>
   <!-- Plugins CSS -->
   <link rel="stylesheet" href="./plugins/bootstrap-4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./plugins/meanmenu/meanmenu.css" />
@@ -19,6 +19,9 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./css/settings.css" />
   <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- TODO Abdallah: Add favicon -->
+
 </head>
 
 <body>
@@ -37,16 +40,29 @@
           <div class=" col-6 col-sm-1 col-lg-6 col-xl-8   position-static order-lg-2">
             <div class="main-navigation ">
               <ul class="main-menu">
+
                 <li class="menu-item "><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
 
                 <li class="menu-item "><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
 
                 <li class="menu-item"><a href="https://github.com/QuranHub" target="_blank">GitHub</a></li>
+
+                <li class="menu-item has-dropdown" dir="ltr">
+                  <a href="#" class="lng-btn">Site Language <i class="icon icon-minimal-down"></i></a>
+                  <ul class="menu-dropdown">
+                    <li class="single-item">
+                      <a href="?lng=en">
+                        <h3>English</h3>
+                      </a>
+                    </li>
+                    <li class="single-item">
+                      <a href="?lng=ar">
+                        <h3>العربية</h3>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
-              <div class="header-btns justify-content-end">
-                <a href="https://play.google.com/store/apps/details?id=app.quranhub"
-                  class="btn btn--primary btn--medium" target="_blank">Download Now</a>
-              </div>
             </div>
 
           </div>
@@ -86,6 +102,22 @@
           <!-- mobile menu navigation start -->
           <nav class="off-canvas-nav">
             <ul class="mobile-menu">
+              <li class="menu-item-has-children">
+                <a href="#" class="lng-btn">Site Language <i class="icon icon-minimal-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="single-item">
+                    <a href="?lng=en">
+                      <h3>English</h3>
+                    </a>
+                  </li>
+                  <li class="single-item">
+                    <a href="?lng=ar">
+                      <h3>العربية</h3>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
               <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
 
               <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
@@ -116,7 +148,7 @@
         <div class="row">
           <div class="col-md-8 col-lg-7 col-xl-6  pb-lg--90 pb-xl--0 order-2 order-md-1">
             <div class="hero-content">
-              <h1 class="title mb--30">
+              <h1 id="appname" class="title mb--30">
                 QuranHub
               </h1>
               <p>
@@ -324,7 +356,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid px--0">
+      <div class="container-fluid px--0" dir="ltr">
         <div class="example-slider-wrapper mb--50 mb-lg--70">
           <div class="example-slider">
             <div class="single-slide">
@@ -474,7 +506,7 @@
           </div>
         </div>
 
-        <div class="row align-items-center mt--30 mt-md--50 mt-lg--80  section-padding-top">
+        <div class="row align-items-center mt--30 mt-md--50 mt-lg--80 section-padding-top">
           <div class="col-lg-3 col-md-3 col-sm-4 col-8">
             <p class="footer-copyright-text text-lg-left p3">
               ©2020 QuranHub.app
@@ -508,15 +540,17 @@
   <script src="./plugins/jquery/jquery.min.js"></script>
   <script src="./plugins/jquery/jquery-migrate.min.js"></script>
   <script src="./plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
+  <script src="https://unpkg.com/i18next/i18next.js"></script>
 
   <!-- Plugins JS -->
-  <script src="./plugins/meanmenu/jquery.meanmenu.js"></script>
   <script src="./plugins/slick-1.8.1/slick.min.js"></script>
   <script src="./plugins/fancybox-master/jquery.fancybox.min.js"></script>
   <script src="./plugins/aos-animation/aos.js"></script>
+  <script src="./plugins/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
 
   <!-- Custom JS -->
   <script src="./js/active.js"></script>
+  <script src="./js/i18n.js"></script>
 </body>
 
 </html>
