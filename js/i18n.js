@@ -1,20 +1,23 @@
+var content = {
+    en: {
+        translation: {
+            hello: "hello world"
+        }
+    },
+    ar: {
+        translation: {
+            hello: "مرحبا بالعالم."
+        }
+    }
+};
+
+
 i18next.use(window.i18nextBrowserLanguageDetector).init(
     {
         debug: false,
         supportedLngs: ['en', 'ar'],
         fallbackLng: 'en',
-        resources: {
-            en: {
-                translation: {
-                    hello: "hello world",
-                },
-            },
-            ar: {
-                translation: {
-                    hello: "مرحبا بالعالم.",
-                },
-            },
-        },
+        resources: content,
         detection: {
             // order and from where user language should be detected
             order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
@@ -43,8 +46,10 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
     },
     function (err, t) {
         console.log("i18next initialized!");
-        
+
         updateContent();
+
+        $('body').show();
     }
 );
 
@@ -55,8 +60,8 @@ i18next.on('languageChanged', function (lng) {
 })
 
 function updateContent() {
-    mytitle.innerHTML = i18next.t('hello');
-    appname.innerHTML = i18next.t('hello');
+    $('title').html(i18next.t('hello'));
+    $('#appname').html(i18next.t('hello'));
 
-    document.body.style.direction = i18next.dir(i18next.language)
+    $('html').css("direction", i18next.dir(i18next.language));
 }
