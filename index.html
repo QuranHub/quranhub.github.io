@@ -54,10 +54,12 @@
     <header class="site-header position-relative d-none d-lg-block">
       <div class="container-fluid pr-lg--30 pl-lg--30">
         <div class="row justify-content-between align-items-center position-relative">
-          <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
+          <div class="order-lg-1">
             <!-- Brand Logo -->
             <div class="brand-logo">
-              <a href=""><img src="image/main-logo.png" alt="" /></a>
+              <a href="">
+                <img src="image/main-logo.png" alt="QuranHub logo" />
+              </a>
             </div>
           </div>
           <!-- Menu Block -->
@@ -65,15 +67,28 @@
             <div class="main-navigation ">
               <ul class="main-menu">
 
-                <li class="menu-item "><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li class="menu-item">
+                  <a href="https://twitter.com/quranhub_app" target="_blank">
+                    <i class="fab fa-twitter-square fa-2x"></i>
+                  </a>
+                </li>
 
-                <li class="menu-item "><a href="https://twitter.com/quranhub_app" target="_blank">Twitter</a></li>
+                <li class="menu-item">
+                  <a href="https://www.youtube.com/channel/UC6m8TORb8_Y5LB8vOXhyEvA" target="_blank">
+                    <i class="fab fa-youtube-square fa-2x"></i>
+                  </a>
+                </li>
 
-                <li class="menu-item"><a href="https://github.com/QuranHub" target="_blank">GitHub</a></li>
+                <li class="menu-item">
+                  <a href="https://github.com/QuranHub" target="_blank">
+                    <i class="fab fa-github-square fa-2x"></i>
+                  </a>
+                </li>
 
-                <li class="menu-item has-dropdown" dir="ltr">
-                  <a href="#" class="lng-btn"><i class="fas fa-language fa-lg mx-2"></i>Languages
-                    <i class="fas fa-chevron-down mx-2"></i></a>
+                <li class="menu-item has-dropdown">
+                  <a href="#" class="lng-btn">
+                    <i class="fas fa-language fa-lg mx-2"></i>Languages<i class="fas fa-chevron-down mx-2"></i>
+                  </a>
                   <ul class="menu-dropdown">
                     <li class="single-item">
                       <a href="?lng=en">
@@ -100,15 +115,17 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4 col-7">
-            <a href="index.html" class="site-brand">
-              <img src="./image/main-logo.png" alt="" />
+            <a href="" class="site-brand">
+              <img src="./image/main-logo.png" alt="QuranHub logo" />
             </a>
           </div>
           <div class="col-md-8 col-5 text-right">
             <div class="header-top-widget">
               <ul class="header-links">
                 <li class="single-link">
-                  <a href="#" class="link-icon hamburger-icon off-canvas-btn"><i class="icon icon-menu-34"></i></a>
+                  <a href="#" class="link-icon hamburger-icon off-canvas-btn">
+                    <i class="fas fa-bars fa-lg"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -119,7 +136,7 @@
     <!--Off Canvas Navigation Start-->
     <aside class="off-canvas-wrapper">
       <div class="btn-close-off-canvas">
-        <i class="icon icon-simple-remove"></i>
+        <i class="fas fa-times fa-lg"></i>
       </div>
       <div class="off-canvas-inner">
         <!-- mobile menu start -->
@@ -128,8 +145,9 @@
           <nav class="off-canvas-nav">
             <ul class="mobile-menu">
               <li class="menu-item-has-children">
-                <a href="#" class="lng-btn"><i class="fas fa-language fa-lg mx-2"></i>Languages
-                  <i class="fas fa-chevron-down mx-2"></i></a>
+                <a href="#" class="lng-btn">
+                  <i class="fas fa-language fa-lg mx-2"></i>Languages<i class="fas fa-chevron-down mx-2"></i>
+                </a>
                 <ul class="sub-menu">
                   <li class="single-item">
                     <a href="?lng=en">
@@ -144,25 +162,28 @@
                 </ul>
               </li>
 
-              <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+              <li>
+                <a href="https://twitter.com/quranhub_app" target="_blank">
+                  <i class="fab fa-twitter fa-lg mx-2"></i>Twitter
+                </a>
+              </li>
 
-              <li><a href="https://twitter.com/quranhub_app" target="_blank">Twitter</a></li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC6m8TORb8_Y5LB8vOXhyEvA" target="_blank">
+                  <i class="fab fa-youtube fa-lg mx-2"></i>YouTube
+                </a>
+              </li>
 
-              <li><a href="https://github.com/QuranHub" target="_blank">GitHub</a></li>
+              <li>
+                <a href="https://github.com/QuranHub" target="_blank">
+                  <i class="fab fa-github fa-lg mx-2"></i>GitHub
+                </a>
+              </li>
             </ul>
           </nav>
           <!-- mobile menu navigation end -->
         </div>
         <!-- mobile menu end -->
-
-        <!-- Header buttons start -->
-        <div class="header-btns offcanvas">
-          <div class="header-btns justify-content-end">
-            <a href="https://play.google.com/store/apps/details?id=app.quranhub" class="btn btn--primary btn--medium"
-              target="_blank">Download Now</a>
-          </div>
-        </div>
-        <!-- Header buttons end -->
       </div>
     </aside>
     <!--Off Canvas Navigation End-->
@@ -174,12 +195,8 @@
         <div class="row">
           <div class="col-md-8 col-lg-7 col-xl-6  pb-lg--90 pb-xl--0 order-2 order-md-1">
             <div class="hero-content">
-              <h1 id="appname" class="title mb--30">
-                QuranHub
-              </h1>
-              <p>
-                The single destination to read & study the Quran.
-              </p>
+              <h1 id="app-name" class="title mb--30">App Name</h1>
+              <p id="app-description">App Description</p>
             </div>
 
             <div class="hero-btns mt--40">
@@ -542,18 +559,18 @@
           <div class="col-lg-2 col-md-2 offset-md-4 col-sm-4 offset-sm-3 offset-lg-7 offset-xl-6 col-4">
             <ul class="footer-social-list">
               <li>
-                <a href="https://www.facebook.com">
-                  <i class="icon icon-logo-fb-simple"></i>
+                <a href="https://twitter.com/quranhub_app" target="_blank">
+                  <i class="fab fa-twitter fa-lg"></i>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/quranhub_app">
-                  <i class="icon icon-logo-twitter"></i>
+                <a href="https://www.youtube.com/channel/UC6m8TORb8_Y5LB8vOXhyEvA" target="_blank">
+                  <i class="fab fa-youtube fa-lg"></i>
                 </a>
               </li>
               <li>
-                <a href="https://github.com/QuranHub">
-                  <i class="icon icon-google"></i>
+                <a href="https://github.com/QuranHub" target="_blank">
+                  <i class="fab fa-github fa-lg"></i>
                 </a>
               </li>
             </ul>

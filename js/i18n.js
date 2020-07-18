@@ -1,12 +1,16 @@
 var content = {
     en: {
         translation: {
-            hello: "hello world"
+            site_title: "QuranHub - Read, Listen & Study the Holy Quran",
+            app_name: "QuranHub",
+            app_description: "Your single destination to read & study the Quran. The digital Quran hub."
         }
     },
     ar: {
         translation: {
-            hello: "مرحبا بالعالم."
+            site_title: "القرآن الكريم - مركز القرآن الرقميّ | QuranHub",
+            app_name: "مركز القرآن الرقميّ | QuranHub",
+            app_description: "وجهتك الواحدة لقراءة ودراسة القرآن الكريم."
         }
     }
 };
@@ -49,7 +53,7 @@ i18next.use(window.i18nextBrowserLanguageDetector).init(
 
         updateContent();
 
-        $('body').show();
+        $('.site-wrapper').show();
     }
 );
 
@@ -60,8 +64,9 @@ i18next.on('languageChanged', function (lng) {
 })
 
 function updateContent() {
-    $('title').html(i18next.t('hello'));
-    $('#appname').html(i18next.t('hello'));
+    $('title').html(i18next.t('site_title'));
+    $('#app-name').html(i18next.t('app_name'));
+    $('#app-description').html(i18next.t('app_description'));
 
     $('html').css("direction", i18next.dir(i18next.language));
 }

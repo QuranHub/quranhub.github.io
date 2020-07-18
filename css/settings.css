@@ -1,10 +1,3 @@
-/*=== Media Query ===*/
-/*=====================================*/
-/*-- :::: Sectio padding :::: --*/
-/*=====================================*/
-/*=====================================*/
-/*-- :::: Space Decrease :::: --*/
-/*=====================================*/
 .space-db--0 {
   margin-bottom: 0px;
 }
@@ -21612,6 +21605,9 @@ body {
 
 .site-wrapper {
   overflow: hidden;
+
+  /* Hide until i18next is initialized */
+  display: none;
 }
 
 .slick-slide:focus {
