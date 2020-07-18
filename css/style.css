@@ -21745,6 +21745,11 @@ p {
   top: -2px;
 }
 
+.header-logo {
+  max-width: 64px;
+  max-height: 64px;
+}
+
 @media (min-width: 992px) {
   .main-menu {
     display: -webkit-box;
