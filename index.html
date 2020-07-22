@@ -579,6 +579,33 @@
       </div>
     </section>
   </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for other Firebase products that we want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-performance.js"></script>
+
+  <script>
+    // Our web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDCQV8WdJF0U9B6Wch-yXJZj6TZpcTTK-A",
+      authDomain: "quranhub.firebaseapp.com",
+      databaseURL: "https://quranhub.firebaseio.com",
+      projectId: "quranhub",
+      storageBucket: "quranhub.appspot.com",
+      messagingSenderId: "37290313887",
+      appId: "1:37290313887:web:573c6a953b314a0326faaa",
+      measurementId: "G-X2W7H9Q9WP"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
   <!-- Vendor JS-->
   <script src="./plugins/jquery/jquery.min.js"></script>
   <script src="./plugins/jquery/jquery-migrate.min.js"></script>
