@@ -3,13 +3,13 @@ var content = {
         translation: {
             site_title: "QuranHub - Read, Listen & Study the Holy Quran",
             app_name: "QuranHub",
-            app_description: "Your single destination to read & study the Quran. The digital Quran hub."
+            app_description: "Your single destination to read & study the Quran."
         }
     },
     ar: {
         translation: {
-            site_title: "القرآن الكريم - مركز القرآن الرقميّ | QuranHub",
-            app_name: "مركز القرآن الرقميّ | QuranHub",
+            site_title: "القرآن الكريم | QuranHub",
+            app_name: "القرآن الكريم | QuranHub",
             app_description: "وجهتك الواحدة لقراءة ودراسة القرآن الكريم."
         }
     }
