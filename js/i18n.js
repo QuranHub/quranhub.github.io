@@ -1,7 +1,7 @@
 var content = {
     en: {
         translation: {
-            site_title: "QuranHub - Read, Listen & Study the Holy Quran",
+            site_title: "QuranHub | Holy Quran",
             app_name: "QuranHub",
             app_description: "Your single destination to read & study the Quran."
         }

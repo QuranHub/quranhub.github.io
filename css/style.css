@@ -21631,6 +21631,7 @@ h1,
 }
 
 @media (min-width: 480px) {
+
   h1,
   .h1 {
     font-size: 46px;
@@ -21638,6 +21639,7 @@ h1,
 }
 
 @media (min-width: 576px) {
+
   h1,
   .h1 {
     font-size: 50px;
@@ -21645,6 +21647,7 @@ h1,
 }
 
 @media (min-width: 992px) {
+
   h1,
   .h1 {
     font-size: 56px;
@@ -21657,6 +21660,7 @@ h2,
 }
 
 @media (min-width: 480px) {
+
   h2,
   .h2 {
     font-size: 35px;
@@ -21664,6 +21668,7 @@ h2,
 }
 
 @media (min-width: 576px) {
+
   h2,
   .h2 {
     font-size: 40px;
@@ -21671,6 +21676,7 @@ h2,
 }
 
 @media (min-width: 992px) {
+
   h2,
   .h2 {
     font-size: 46px;
@@ -21761,7 +21767,7 @@ p {
 }
 
 @media (min-width: 992px) {
-  .main-menu > li > a {
+  .main-menu>li>a {
     color: #000000;
     font-size: 16px;
     font-weight: 400;
@@ -21770,7 +21776,7 @@ p {
   }
 }
 
-.main-menu > li > a:hover {
+.main-menu>li>a:hover {
   color: #2780ff;
 }
 
@@ -21891,7 +21897,7 @@ p {
 
 .lng-btn {
   background-color: #dddfe0;
-  padding: 5px 0px 5px 0px;
+  padding: 6px 0px 6px 0px;
 }
 
 /*  Mobile Menu / Mean Menu Reset  */
@@ -22019,34 +22025,34 @@ p {
   padding: 20px 0;
 }
 
-.mobile-navigation .mobile-menu > li {
+.mobile-navigation .mobile-menu>li {
   padding-bottom: 13px;
   margin-bottom: 13px;
   border-bottom: 1px solid #ececec;
 }
 
-.mobile-navigation .mobile-menu > li .sub-menu > li {
+.mobile-navigation .mobile-menu>li .sub-menu>li {
   padding-top: 13px;
   margin-top: 13px;
   border-top: 1px solid #ececec;
   padding-left: 20px;
 }
 
-.mobile-navigation .mobile-menu > li .sub-menu > li.single-item h3 {
+.mobile-navigation .mobile-menu>li .sub-menu>li.single-item h3 {
   font-size: 15px;
   margin-bottom: 5px;
   font-weight: 600;
 }
 
-.mobile-navigation .mobile-menu > li .sub-menu > li.single-item p {
+.mobile-navigation .mobile-menu>li .sub-menu>li.single-item p {
   font-size: 13px;
 }
 
-.mobile-navigation .mobile-menu > li .sub-menu > li.single-item a:hover {
+.mobile-navigation .mobile-menu>li .sub-menu>li.single-item a:hover {
   color: inherit;
 }
 
-.mobile-navigation .mobile-menu > li:last-child {
+.mobile-navigation .mobile-menu>li:last-child {
   border-bottom-color: transparent;
 }
 
@@ -22056,7 +22062,7 @@ p {
   top: 3px;
 }
 
-.mobile-navigation .mobile-menu li:hover > a {
+.mobile-navigation .mobile-menu li:hover>a {
   color: #2780ff;
 }
 
@@ -22907,6 +22913,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 16px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -23237,4 +23244,19 @@ p {
     margin-top: 120px;
   }
 }
+
+.slick-prev:before {
+  content: "<";
+  color: #86adfb;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.slick-next:before {
+  content: ">";
+  color: #86adfb;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
