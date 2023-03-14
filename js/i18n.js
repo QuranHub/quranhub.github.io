@@ -3,14 +3,20 @@ var content = {
         translation: {
             site_title: "QuranHub | Holy Quran",
             app_name: "QuranHub",
-            app_description: "Your single destination to read & study the Quran."
+            app_description: "Your single destination to read & study the Quran.",
+            download_android: "Download for Android",
+            download_ios: "Download for iOS (Coming Soon)",
+            usage_data: "Used by over 15K+ users"
         }
     },
     ar: {
         translation: {
             site_title: "القرآن الكريم | QuranHub",
             app_name: "القرآن الكريم | QuranHub",
-            app_description: "وجهتك الواحدة لقراءة ودراسة القرآن الكريم."
+            app_description: "وجهتك الواحدة لقراءة ودراسة القرآن الكريم.",
+            download_android: "حمّل لنظام أندرويد",
+            download_ios: "حمل لنظام أبل (سيتوفر قريبا)",
+            usage_data: "يستعمله أكثر من 15 ألف مستخدم"
         }
     }
 };
@@ -67,6 +73,9 @@ function updateContent() {
     $('title').html(i18next.t('site_title'));
     $('#app-name').html(i18next.t('app_name'));
     $('#app-description').html(i18next.t('app_description'));
+    $('.download-android').html(i18next.t('download_android'))
+    $('.download-ios').html(i18next.t('download_ios'))
+    $('#usage-data').html(i18next.t('usage_data'))
 
     $('html').css("direction", i18next.dir(i18next.language));
 }
