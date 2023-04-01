@@ -13,7 +13,10 @@ var content = {
             listen_quran_title: "Listen to Quran",
             listen_quran_description: "Listen to Quran audio by various popular reciters.",
             understand_quran_title: "Understand Quran",
-            understand_quran_description: "Read Quran tafsir (explanation) & translation in various languages."
+            understand_quran_description: "Read Quran tafsir (explanation) & translation in various languages.",
+            useful_feature: "Useful feature",
+            useful_feature_title: "Search in the Quran",
+            useful_feature_description: "Search with a keyword across the entire Quran or just in a Juz', Hizb, Quarter or single Sura"
         
         }
     },
@@ -21,7 +24,7 @@ var content = {
         translation: {
             site_title: "القرآن الكريم | QuranHub",
             app_name: "القرآن الكريم | QuranHub",
-            app_description: "وجهتك الواحدة لقراءة ودراسة القرآن الكريم.",
+            app_description: "وجهتك الواحدة لقراءة ودراسة القرآن الكريم",
             download_android: "حمّل لنظام أندرويد",
             download_ios: "حمل لنظام أبل (سيتوفر قريبا)",
             usage_data: "يستعمله أكثر من 15 ألف مستخدم",
@@ -31,7 +34,10 @@ var content = {
             listen_quran_title: "استمع إلى القرآن",
             listen_quran_description: "استمع إلى القرآن الكريم بصوت العديد من القرّاء المشهورين.",
             understand_quran_title: "تدبّر القرآن",
-            understand_quran_description: "اقرأ تفسير القرآن الكريم أو ترجمته بالعديد من اللغات."
+            understand_quran_description: "اقرأ تفسير القرآن الكريم أو ترجمته بالعديد من اللغات.",
+            useful_feature: "ميزة مفيدة",
+            useful_feature_title: "البحث في القرآن",
+            useful_feature_description: "ابحث عن كلمة معينة في القرآن الكريم كله أو فقط في جزء منه أو حزب أو ربع أو سورة"
 
         }
     }
@@ -86,7 +92,9 @@ i18next.on('languageChanged', function (lng) {
 })
 
 function updateContent() {
-    $('html').css("direction", i18next.dir(i18next.language));
+    // The website doesn't support RTL layout direction yet
+    // $('html').css("direction", i18next.dir(i18next.language));
+    $('#main-features-section').css("direction", i18next.dir(i18next.language));
 
     setLocalizedText('title', 'site_title')
     setLocalizedText('#app-name', 'app_name')
@@ -101,6 +109,9 @@ function updateContent() {
     setLocalizedText('#listen-quran-feature-description', 'listen_quran_description')
     setLocalizedText('#understand-quran-feature-title', 'understand_quran_title')
     setLocalizedText('#understand-quran-feature-description', 'understand_quran_description')
+    setLocalizedText('#useful-feature-label', 'useful_feature')
+    setLocalizedText('#useful-feature-title', 'useful_feature_title')
+    setLocalizedText('#useful-feature-description', 'useful_feature_description')
 
 }
 
