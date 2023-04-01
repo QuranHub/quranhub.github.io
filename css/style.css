@@ -23247,14 +23247,14 @@ p {
 }
 
 .slick-prev:before {
-  content: "<";
+  content: "⬅️";
   color: #86adfb;
   font-size: 24px;
   font-weight: bold;
 }
 
 .slick-next:before {
-  content: ">";
+  content: "➡️";
   color: #86adfb;
   font-size: 24px;
   font-weight: bold;
