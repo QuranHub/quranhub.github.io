@@ -21898,6 +21898,7 @@ p {
 .lng-btn {
   background-color: #dddfe0;
   padding: 6px 0px 6px 0px;
+  border-radius: 8px;
 }
 
 /*  Mobile Menu / Mean Menu Reset  */
