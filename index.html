@@ -185,7 +185,6 @@
         <!--Off Canvas Navigation End-->
 
         <!-- Banner Section -->
-
         <section class="hero-area position-relative section-padding pb-lg--0">
             <div class="container">
                 <div class="row">
@@ -198,11 +197,14 @@
                         <div class="hero-btns mt--40">
                             <a href="https://play.google.com/store/apps/details?id=app.quranhub"
                                 class="android btn btn--primary btn--large mr--15" target="_blank">
-                                <i class="fab fa-android"></i><span class="p2 download-android">DOWNLOAD
-                                    ANDROID</span></a>
+                                <i class="fab fa-android"></i><span class="p2 download-android">
+                                    DOWNLOAD ANDROID
+                                </span></a>
                             <br>
                             <a href="#" class="apple btn btn--primary btn--large disabled">
-                                <i class="fab fa-apple"></i><span class="p2 download-ios">DOWNLOAD IOS</span></a>
+                                <i class="fab fa-apple"></i><span class="p2 download-ios">
+                                    DOWNLOAD IOS
+                                </span></a>
                         </div>
 
                         <div class="hero-ratings mt--15">
@@ -340,7 +342,7 @@
 
                         <div class=" col-md-8 col-lg-7 col-xl-6 offset-lg-1 offset-xl-1 order-2" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-once="true">
-                            <h2 class="title h2">Highlight a verse to show more options.</h2>
+                            <h2 id="highlight-verse-feature-title" class="title h2">HIGHLIGHT VERSE</h2>
 
                             <div class="content-widgets">
                                 <div class="content-widget-wrapper">
@@ -350,11 +352,8 @@
                                         </div>
 
                                         <div class="content">
-                                            <h6 class="widget-title">Bookmarks & notes</h6>
-                                            <p>
-                                                Bookmark a verse or add text & audio notes to it to help you in
-                                                studying & memorizing the Quran.
-                                            </p>
+                                            <h6 id="bookmarks-feature-title" class="widget-title">BOOKMARKS & NOTES</h6>
+                                            <p id="bookmarks-feature-description">BOOKMARKS & NOTES DESCRIPTION</p>
                                         </div>
                                     </div>
 
@@ -364,10 +363,8 @@
                                         </div>
 
                                         <div class="content">
-                                            <h6 class="widget-title">Share</h6>
-                                            <p>
-                                                Share a verse text via other apps.
-                                            </p>
+                                            <h6 id="share-feature-title" class="widget-title">SHARE</h6>
+                                            <p id="share-feature-description">SHARE DESCRIPTION</p>
                                         </div>
                                     </div>
                                 </div>
@@ -383,10 +380,8 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
                     <div class="section-title">
-                        <h2 class="example-title h2">Take a closer look</h2>
-                        <p>
-                            QuranHub has many features that you'll find useful.
-                        </p>
+                        <h2 id="screenshots-section-title" class="example-title h2">SCREENSHOTS</h2>
+                        <p id="screenshots-section-description">SCREENSHOTS DESCRIPTION</p>
                     </div>
                 </div>
             </div>
@@ -432,7 +427,7 @@
                         <i class="fas fa-download"></i>
                     </div>
 
-                    <h2 class="cta-title h2">Download it now</h2>
+                    <h2 id="download-now-label" class="cta-title h2">DOWNLOAD</h2>
                     <div class="cta-btns mb--30">
                         <a href="https://play.google.com/store/apps/details?id=app.quranhub"
                             class="android btn btn--primary btn--large" target="_blank">
@@ -461,9 +456,10 @@
                     <div class="col-lg-5 col-xl-4 col-sm-8 col-11 col-md-6">
                         <div class="footer-content">
                             <p class="p1">
-                                Created with ❤️ in Cairo, Egypt
+                                <span id="created-with-love-label" class="p1">CREATED WITH LOVE</span>
                                 <br />
-                                <a href="https://github.com/sponsors/QuranHub" target="_blank">Support us</a>
+                                <a id="support-link" href="https://github.com/sponsors/QuranHub"
+                                    target="_blank">SUPPORT</a>
                             </p>
                         </div>
                     </div>
@@ -471,10 +467,13 @@
                     <div class="col-lg-5 offset-lg-1">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <span class="contact-title p1">Contact us</span>
+                                <span id="contact-label" class="contact-title p1">CONTACT US</span>
 
                                 <div class="footer-address">
-                                    <p><a href="mailto:contact@quranhub.app" target="_blank">contact@quranhub.app</a>
+                                    <p>
+                                        <a id="email-link" href="mailto:contact@quranhub.app" target="_blank">
+                                            contact@quranhub.app
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -511,8 +510,7 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for other Firebase products that we want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- Firebase products that we use -->
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-performance.js"></script>
 
