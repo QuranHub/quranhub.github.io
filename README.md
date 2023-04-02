@@ -42,4 +42,4 @@ Please read [CONTRIBUTING.md](https://github.com/QuranHub/quranhub.github.io/blo
 ## License
 [![GNU GPL-3.0 Logo](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](https://github.com/QuranHub/quranhub.github.io/blob/master/LICENSE) file for details.
+This website is licensed under the **GNU General Public License v3.0** - see the [LICENSE](https://github.com/QuranHub/quranhub.github.io/blob/master/LICENSE) file for details.
