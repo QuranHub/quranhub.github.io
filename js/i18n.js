@@ -26,7 +26,7 @@ var content = {
             screenshots_section_description: "QuranHub has many features that you'll find useful",
             download_now: "Download it now",
             created_with_love: "Created with ❤️ in Cairo, Egypt",
-            support_link: "Support us ❤️",
+            support_link: "Support us",
             contact_us: "Contact us",
         
         }
@@ -58,7 +58,7 @@ var content = {
             screenshots_section_description: "يحتوي تطبيق القرآن الكريم على العديد من الميزات التي ستجدها مفيدة",
             download_now: "حمّله الآن",
             created_with_love: "تم إنشاؤه  بـ ❤️ في القاهرة، مصر",
-            support_link: "❤️ ادعمنا",
+            support_link: "ادعمنا",
             contact_us: "تواصل معنا",
 
         }
