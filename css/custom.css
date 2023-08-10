@@ -22069,9 +22069,9 @@
   color: #fa8231;
 }
 
-.hero-ratings .rating-stars li:last-child {
+/* .hero-ratings .rating-stars li:last-child {
   color: #e5e5e5;
-}
+} */
 
 .hero-image {
   z-index: 1;
