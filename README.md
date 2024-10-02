@@ -16,8 +16,7 @@ The QuranHub Android mobile app provides the following features:
 - Verse bookmarking, and sharing.
 - Ability to add text & audio notes to verses.
 - Advanced search in the Quran.
-- Quran reader (mus'haf) night mode for easier reading in the Quran.
-- Islamic library with various books to download as PDF files and view inside the app.
+- Quran reader (mus'haf) night mode for easier reading of the Quran.
 - Quran topics with their verses in the Quran.
 
 Download the app from the Google Play Store:  
@@ -37,7 +36,7 @@ Please read [CONTRIBUTING.md](https://github.com/QuranHub/quranhub.github.io/blo
 2.  Create your feature branch:  `git checkout -b my-new-feature`
 3.  Commit your changes:  `git add .`  `git commit -m 'Add some feature'`
 4.  Push to the branch:  `git push origin my-new-feature`
-5.  Create new Pull Request.
+5.  Create a new Pull Request.
 
 ## License
 [![GNU GPL-3.0 Logo](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)
