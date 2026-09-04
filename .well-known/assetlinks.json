@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.quranhub",
+      "sha256_cert_fingerprints": [
+        "65:3D:60:A3:B6:46:59:E2:9D:33:F2:8C:35:B1:A4:D1:26:B9:2F:E5:0A:9A:5B:41:A5:3C:92:CF:22:0D:22:29"
+      ]
+    }
+  }
+]
